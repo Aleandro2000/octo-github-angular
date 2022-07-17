@@ -1,0 +1,11 @@
+<app-navbar></app-navbar>
+<form class="center" [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+    <mat-form-field class="w-full" appearance="fill">
+        <mat-label>GitHub Profile</mat-label>
+        <input type="text" matInput placeholder="Ex. Potato" formControlName="profile" required>
+    </mat-form-field>
+    <button type="submit" mat-raised-button color="primary"><mat-icon aria-hidden="false" aria-label="GitHub">search</mat-icon>Search</button>
+</form>
+<br><br>
+{{results}}
+<app-footer></app-footer>
